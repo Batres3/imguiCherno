@@ -1,0 +1,4269 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C33011",
+          "message": {
+            "text": "Unchecked upper bound for enum key used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 8504,
+                  "startColumn": 29,
+                  "endLine": 8504,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::GetKeyData",
+                  "decoratedName": "?GetKeyData@ImGui@@YAPEAUImGuiKeyData@@PEAUImGuiContext@@W4ImGuiKey@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8494,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8496,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8496,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8499,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'key & 63488'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8503,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= key'. 'true' branch is taken\nEnum value 'key' is checked for lower bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8503,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'key < 652'. 'false' branch is taken\nEnum value 'key' is checked for lower bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8503,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8503,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8503,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8503,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8504,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8504,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'result.IsLegacyKey'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8504,
+                            "startColumn": 46
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum source used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 9441,
+                  "startColumn": 5,
+                  "endLine": 9441,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetInputSourceName",
+                  "decoratedName": "?GetInputSourceName@@YAPEBDW4ImGuiInputSource@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9437,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9439,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9439,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9440,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '1'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9440,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= source'. 'false' branch is taken\nEnum value 'source' is checked for upper bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9440,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9440,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9440,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9440,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9441,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum source used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 9447,
+                  "startColumn": 5,
+                  "endLine": 9447,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetMouseSourceName",
+                  "decoratedName": "?GetMouseSourceName@@YAPEBDW4ImGuiMouseSource@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9443,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9445,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9445,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9446,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '1'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9446,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= source'. 'false' branch is taken\nEnum value 'source' is checked for upper bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9446,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9446,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9446,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9446,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 9447,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'viewport'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14462,
+                  "startColumn": 5,
+                  "endLine": 14462,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DestroyViewport",
+                  "decoratedName": "?DestroyViewport@ImGui@@YAXPEAUImGuiViewportP@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14446,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14447,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14447,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14449,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14450,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14452,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14453,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14447,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14447,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14449,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14450,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'viewport' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14452,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14453,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14447,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14447,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "Exit this loop, ('window_n<g.Windows.Size' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14455,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14459,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14460,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'viewport' is an In/Out argument to 'ImGui::DestroyPlatformWindow' (declared at c:\\dev\\enginecherno\\hazel\\vendor\\imgui\\imgui_internal.h:3064)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14461,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14462,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this loop, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14462,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'viewport' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'window->Viewport'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14595,
+                  "startColumn": 13,
+                  "endLine": 14595,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14470,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14471,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14472,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14475,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14476,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14481,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14484,
+                            "startColumn": 71
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14490,
+                            "startColumn": 73
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14505,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14506,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14518,
+                            "startColumn": 53
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14525,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14530,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14534,
+                            "startColumn": 44
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14538,
+                            "startColumn": 77
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14548,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'window->Viewport' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14549,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14554,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'window->Viewport==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14555,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14559,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '!lock_viewport')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14561,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'flags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14573,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14591,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14595,
+                            "startColumn": 56
+                          }
+                        },
+                        "message": {
+                          "text": "'window->Viewport' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'window'. See line 14471 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14600,
+                  "startColumn": 5,
+                  "endLine": 14600,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14470,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14471,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14472,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14475,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14476,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14481,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14484,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14490,
+                            "startColumn": 73
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14505,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14506,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14518,
+                            "startColumn": 53
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14525,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14530,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'flags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14534,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is an In/Out argument to 'ImGui::GetWindowAlwaysWantOwnViewport' (declared on line 1094)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14534,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14538,
+                            "startColumn": 77
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14548,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14549,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14554,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'window->Viewport==0')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14555,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is an In/Out argument to 'ImGui::UpdateTryMergeWindowIntoHostViewport' (declared on line 1092)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14555,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14556,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is an In/Out argument to 'ImGui::AddUpdateViewport' (declared on line 1086)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14559,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '!lock_viewport')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14561,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'flags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14573,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14591,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14595,
+                            "startColumn": 56
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14600,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'window' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'node'. See line 15582 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 15671,
+                  "startColumn": 9,
+                  "endLine": 15671,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockContextProcessDock",
+                  "decoratedName": "?DockContextProcessDock@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockRequest@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15544,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15545,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15547,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15548,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15550,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15551,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15552,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15553,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15556,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15559,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15560,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15561,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15573,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15575,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15579,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15581,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15582,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15583,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15584,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15592,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15593,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15604,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15606,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15671,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'node->TabBar'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 15900,
+                  "startColumn": 13,
+                  "endLine": 15900,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeAddWindow",
+                  "decoratedName": "?DockNodeAddWindow@ImGui@@YAXPEAUImGuiDockNode@@PEAUImGuiWindow@@_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15859,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15859,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15860,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15866,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15867,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15872,
+                            "startColumn": 61
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15875,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15876,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15877,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15878,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15879,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15880,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15884,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15895,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15897,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'node->TabBar' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15899,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 15900,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "'node->TabBar' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'node' contains the same NULL value as 'info->CentralNode' did. See line 16073 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 16087,
+                  "startColumn": 9,
+                  "endLine": 16087,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DockNodeFindInfo",
+                  "decoratedName": "?DockNodeFindInfo@@YAXPEAUImGuiDockNode@@PEAUImGuiDockNodeTreeInfo@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16073,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16079,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16081,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16082,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16083,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16085,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16087,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->ChildNodes[0]' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16087,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'merge_lead_child'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 17418,
+                  "startColumn": 5,
+                  "endLine": 17418,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeTreeMerge",
+                  "decoratedName": "?DockNodeTreeMerge@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockNode@@1@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17392,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17393,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17394,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17395,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17396,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child' may be NULL (Enter this loop)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17397,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17402,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17404,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17405,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child' is an In/Out argument to 'ImGui::DockNodeMoveChildNodes' (declared on line 15085)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17406,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'child_0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17411,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this branch, (assume 'child_1')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17413,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17414,
+                            "startColumn": 41
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17416,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17417,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17418,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'node'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 18444,
+                  "startColumn": 9,
+                  "endLine": 18444,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18394,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18395,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18398,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18400,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18401,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18412,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18413,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18414,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18415,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18423,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18424,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18426,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'window->DockId!=0&&node==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18444,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "Dereferencing NULL pointer. 'window->DockNode' contains the same NULL value as 'node' did. See line 18444 for an earlier location where this can occur"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 18515,
+                  "startColumn": 18,
+                  "endLine": 18515,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18394,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18395,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18398,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18400,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18401,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18412,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18413,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18414,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18415,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18423,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18424,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node' may be NULL (Skip this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18426,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'window->DockId!=0&&node==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18444,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18456,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18456,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18457,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18456,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18456,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18457,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18456,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18456,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18462,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->HostWindow==0' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18472,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '!!((node->HostWindow))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18473,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '!!((node->IsLeafNode()))')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18474,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18475,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18478,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18485,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18486,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18487,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18488,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18489,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18490,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18491,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->MergedFlags' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18495,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume 'node->VisibleWindow==window' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18499,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume '<branch condition>')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18500,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18501,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18504,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18508,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18511,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "Skip this branch, (assume '<branch condition>' is false)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 18515,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "'node' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum key used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 19639,
+                  "startColumn": 95,
+                  "endLine": 19639,
+                  "endColumn": 119
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::ShowMetricsWindow::funcs::IsLegacyNativeDupe",
+                  "decoratedName": "?IsLegacyNativeDupe@funcs@?KO@??ShowMetricsWindow@ImGui@@YAXPEA_N@Z@SA_NW4ImGuiKey@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19639,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19639,
+                            "startColumn": 86
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'key < 512'. 'true' branch is taken\nEnum value 'key' is checked for upper bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19639,
+                            "startColumn": 95
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 19639,
+                            "startColumn": 115
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.36.32535.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Dev/EngineCherno/Hazel/vendor/imgui/imgui.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "4b32345e5744889f146a0458f68e51417091d0e18bd685eca65eafe1cc7bff61"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/enginecherno/hazel/vendor/imgui/imgui.h"
+          },
+          "hashes": {
+            "sha-256": "758c41e7b987d595d973bbc01064e9457dd90a10ff628ab01f13ba9db84ee4c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/enginecherno/hazel/vendor/imgui/imconfig.h"
+          },
+          "hashes": {
+            "sha-256": "c51306af988faf60a79adab9933472e08de161cca54e0ab37824a56435a69fd0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/enginecherno/hazel/vendor/imgui/imgui_internal.h"
+          },
+          "hashes": {
+            "sha-256": "e7972849343126a6126c6f0df4536c1ea8981f8c91b554f7f229c600b3cd9b94"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/enginecherno/hazel/vendor/imgui/imstb_textedit.h"
+          },
+          "hashes": {
+            "sha-256": "789e1759a06827df0894674c73cb3e40af8b11e6e1c210104155682b68d266f6"
+          }
+        }
+      ]
+    }
+  ]
+}
