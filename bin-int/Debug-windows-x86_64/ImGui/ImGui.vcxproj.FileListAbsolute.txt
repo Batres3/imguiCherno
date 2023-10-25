@@ -1,2 +1,0 @@
-C:\Dev\EngineCherno\Hazel\vendor\imgui\bin\Debug-windows-x86_64\ImGui\ImGui.lib.lastcodeanalysissucceeded
-C:\Dev\EngineCherno\Hazel\vendor\imgui\bin-int\Debug-windows-x86_64\ImGui\NativeCodeAnalysis.read.1.tlog
