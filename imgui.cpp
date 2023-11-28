@@ -9381,7 +9381,7 @@ void ImGui::UpdateMouseWheel()
 
     // Mouse wheel scrolling
     // Read about io.MouseWheelRequestAxisSwap and its issue on Mac+Emscripten in UpdateMouseInputs()
-    if (g.IO.MouseWheelRequestAxisSwap)
+    if (g.IO.MouseWheelRequestAxisSwap || (mouse_window->Flags & ImGuiWindowFlags_MouseWheelSwap))
         wheel = ImVec2(wheel.y, 0.0f);
 
     // Maintain a rough average of moving magnitude on both axises
