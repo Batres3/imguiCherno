@@ -65,3 +65,4 @@ bin-int/
 *.vcxproj.filters
 /Makefile
 *.user
+cpp.hint
