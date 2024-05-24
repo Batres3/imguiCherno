@@ -3920,15 +3920,6 @@ void ImGui::SetActiveID(ImGuiID id, ImGuiWindow* window)
     if (g.ActiveId != 0)
     {
 
-        if (window != NULL)
-        {
-            for (int i = 0; i < window->DC.Layouts.Data.Size; i++)
-            {
-                ImGuiLayout* layout = (ImGuiLayout*)window->DC.Layouts.Data[i].val_p;
-                IM_DELETE(layout);
-            }
-        }
-
         // While most behaved code would make an effort to not steal active id during window move/drag operations,
         // we at least need to be resilient to it. Canceling the move is rather aggressive and users of 'master' branch
         // may prefer the weird ill-defined half working situation ('docking' did assert), so may need to rework that.
@@ -10699,7 +10690,7 @@ static void ImGui::EndLayout(ImGuiLayoutType type)
 {
     ImGuiWindow* window = GetCurrentWindow();
     IM_ASSERT(window->DC.CurrentLayout);
-    IM_ASSERT(window->DC.CurrentLayout->Type == type);
+    if(!(window->DC.CurrentLayout->Type == type)) __debugbreak();
 
     ImGuiLayout* layout = window->DC.CurrentLayout;
 
