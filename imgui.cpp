@@ -10690,7 +10690,6 @@ static void ImGui::EndLayout(ImGuiLayoutType type)
 {
     ImGuiWindow* window = GetCurrentWindow();
     IM_ASSERT(window->DC.CurrentLayout);
-    if(!(window->DC.CurrentLayout->Type == type)) __debugbreak();
 
     ImGuiLayout* layout = window->DC.CurrentLayout;
 
